@@ -16,5 +16,11 @@ describe ("herdTheBabies", () =>{
     test("when passed a selection of characters in upper and lower case, arrange accordingly", ()=>{
         expect(herdTheBabies("aEAaCbefeaDBacFd")).toBe("AaaaaBbCcDdEeeFf");
     });
+    test("passes example tests", ()=>{
+        expect(herdTheBabies("aA")).toBe("Aa");
+        expect(herdTheBabies("aBA")).toBe("AaB");
+        expect(herdTheBabies("bbaBccAC")).toBe("AaBbbCcc");
+        expect(herdTheBabies("AaBbbBaAbAbbAbB")).toBe("AAAAaaBBBbbbbbb");
+    })
 
 })
